@@ -1,4 +1,5 @@
-import react.dom.*
+import kotlinx.serialization.Serializable
+import react.dom.render
 import kotlin.browser.document
 
 fun main() {
@@ -7,4 +8,5 @@ fun main() {
     }
 }
 
+@Serializable
 data class Video(val id: Int, val title: String, val speaker: String, val videoUrl: String)
